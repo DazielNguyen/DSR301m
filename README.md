@@ -1,70 +1,71 @@
-# DSR301m - Data Science with R
+# DSR301m — Student Performance Analysis
 
-This repository contains projects and assignments for the DSR301m course.
+A data science portfolio project exploring the factors associated with student
+performance, study habits, and mental health. The repository contains the
+DSR301m project work only; unrelated Coursera materials are intentionally kept
+out of the public repository.
 
-## Project Structure
+## Project overview
 
-```
+The analyses use regression and ensemble-learning approaches to investigate
+three main questions:
+
+- Which factors are most useful for predicting exam scores?
+- How well can student habits predict mental-health ratings?
+- Which behaviours are associated with daily study time?
+
+The work covers exploratory data analysis, preprocessing, feature selection,
+model training, hyperparameter tuning, evaluation, and result visualisation.
+
+## Repository structure
+
+```text
 DSR301m/
-├── projects/              # Main projects and analyses
-│   ├── main_projects/     # Core DSR301m project parts
-│   ├── student_habits/    # Student habits and mental health analysis
-│   └── exam_score/        # Exam score analysis
-│
-├── data/                  # All datasets
-│   ├── jfk_weather/       # JFK weather data
-│   └── *.csv              # Student habit datasets
-│
-├── models/                # Trained models (RDS files)
-│
-├── scripts/               # R scripts and utilities
-│
-├── assets/                # Images and other media files
-│
-├── notebooks/             # Practice and experimental notebooks
-│
-├── Coursera/              # Coursera course materials
-│
-└── LAB_COURSE_04/         # Lab exercises and assignments
-
+├── projects/
+│   ├── main_projects/    # End-to-end project notebooks
+│   ├── student_habits/   # Study-time and mental-health analyses
+│   └── exam_score/       # Exam-score analysis
+├── models/                   # Saved trained models (.rds)
+├── scripts/                  # R scripts and local notebook helpers
+├── assets/                   # Project figures
+├── notebooks/                # Supporting experiments
+└── data/                     # Dataset documentation
 ```
 
-## Projects
+Local CSV datasets are excluded from Git. To reproduce an analysis, place the
+required dataset in `data/` and update any machine-specific path in the notebook
+to point to that directory.
 
-### Main Projects
-- DSR301m Project Part 1 & 2: Core course projects
+## Main work
 
-### Student Habits Analysis
-- Study hours prediction
-- Mental health analysis
-- Performance analysis
+- **Project Part 1:** data exploration, cleaning, and visual analysis.
+- **Project Part 2:** predictive modelling for exam score, mental health, and
+  study hours.
+- **Student habits:** individual R/Python experiments with linear regression,
+  polynomial regression, random forest, gradient boosting, XGBoost, SVR, and
+  stacked models.
+- **Exam score:** focused regression analysis and model comparison.
 
-### Exam Score Analysis
-- Exam score prediction and analysis
+## Tools and techniques
 
-## Data Files
+- R, Python, and Jupyter Notebook
+- Data preprocessing and exploratory data analysis
+- Regression, ensemble models, and hyperparameter tuning
+- MSE, RMSE, and R² model evaluation
+- ggplot2, Matplotlib, and Seaborn visualisation
 
-All data files are organized in the `data/` folder:
-- Student habits and performance datasets
-- JFK weather data for time series analysis
+## Running the notebooks
 
-## Models
-
-Trained models are saved in the `models/` folder:
-- Linear regression models
-- Polynomial regression models (degree 2 & 3)
-- Study hours prediction models
-
-## Getting Started
-
-1. Ensure you have R and RStudio installed
-2. Install required packages (tidyverse, caret, etc.)
-3. Navigate to the relevant project folder
-4. Run the Jupyter notebooks or R scripts
+1. Install R or Python and Jupyter, depending on the selected notebook.
+2. Install the packages imported by that notebook.
+3. Add the required CSV files under `data/`.
+4. Replace legacy Google Drive or absolute local paths with a relative path such
+   as `data/students_habit2.csv`.
+5. Open a notebook from `projects/` and run its cells in order.
 
 ## Contributors
 
-- Công Khánh - Study hours analysis
-- Hoàng Anh - Mental health analysis
-- Anh Duy - Exam score analysis
-- Quang Khải - Mental health prediction
+- Anh Duy — exam-score analysis
+- Công Khanh — study-hours analysis
+- Hoàng Anh — mental-health analysis
+- Quang Khải — mental-health prediction

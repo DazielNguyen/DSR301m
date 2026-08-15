@@ -9,5 +9,15 @@
 # Thumbnails
 ._*
 
+# Local environments and editor settings
+.venv/
+.vscode/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
 
+# Course materials kept locally, but excluded from this portfolio
+Coursera/
+
+# Datasets are kept locally and excluded from the public repository
 *.csv
