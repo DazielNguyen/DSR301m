@@ -1,4 +1,4 @@
-![02-Data Science with R—Student Performance Prediction cover](images/02-Data Science with R—Student Performance Prediction.png)
+![02-Data Science with R—Student Performance Prediction cover](images/02-DSR-Cover.png)
 
 # Data Science with R — Student Performance Prediction
 
