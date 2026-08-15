@@ -1,4 +1,6 @@
-# DSR301m — Student Performance Analysis
+![02-Data Science with R—Student Performance Prediction cover](images/02-Data Science with R—Student Performance Prediction.png)
+
+# Data Science with R — Student Performance Prediction
 
 A data science portfolio project exploring the factors associated with student
 performance, study habits, and mental health. The repository contains the
